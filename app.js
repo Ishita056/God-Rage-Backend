@@ -97,6 +97,10 @@ const data = {
     // }]
 
 
+    app.get('/', function(req, res){
+      res.json({message:"Hello from God-Rage Backend Server "})
+    });
+
 app.post('/upload', upload.single('file'), async (req, res) => {
   console.log("hello")
   if (!req.file) {
